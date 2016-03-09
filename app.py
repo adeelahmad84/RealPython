@@ -49,3 +49,8 @@ def hello_world():
 # start the development server using the run() method
 if __name__ == "__main__":
     app.run()
+    import doctest
+    doctest.testmod()
+    class MyTest(unittest.TestCase):
+        def test(self):
+            self.assertEqual(main(), )
